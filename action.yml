@@ -61,7 +61,7 @@ runs:
     - name: Make script executable
       run: chmod +x ${{ inputs.SCRIPT_PATH }}
       shell: bash
-    - name: interact with ChatGPT
+    - name: Run the script to interact
       run: ${{ inputs.SCRIPT_PATH }} ${{ inputs.GITHUB_TOKEN }} ${{ inputs.REPOSITORY }} ${{ inputs.ISSUE_NUMBER }} ${{ inputs.OPENAI_API_KEY }}
       shell: bash
       env:
