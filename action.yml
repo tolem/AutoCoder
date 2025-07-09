@@ -62,6 +62,7 @@ runs:
       run: chmod +x ${{ inputs.SCRIPT_PATH }}
       shell: bash
     - name: Run the script to interact
+      id: generate_code
       run: ${{ inputs.SCRIPT_PATH }} ${{ inputs.GITHUB_TOKEN }} ${{ inputs.REPOSITORY }} ${{ inputs.ISSUE_NUMBER }} ${{ inputs.OPENAI_API_KEY }}
       shell: bash
       env:
