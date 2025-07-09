@@ -10,7 +10,7 @@ jobs:
     steps:    
       - name: Checkout repository        
         uses: actions/checkout@v4
-      - name: Autocoder composite action
+      - name: interact with ChatGPT
         uses: tolem/Autocoder@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
