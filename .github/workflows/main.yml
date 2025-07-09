@@ -1,24 +1,3 @@
-# name: Auto_Coder
-# on:
-#   issues:    
-#     types: [opened, reopened, labeled] 
-    
-# jobs: 
-#   access_issue_info:  
-#     if: contains(github.event.issue.labels.*.name, 'autocoder-bot')
-#     runs-on: ubuntu-latest    
-#     steps:    
-#       - name: Checkout repository        
-#         uses: "actions/checkout@v4"
-#       - name: interact_with_ChatGPT
-#         uses: "tolem/Autocoder@main"
-#         with:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-#           REPOSITORY: ${{ github.repository }} 
-#           ISSUE_NUMBER: ${{ github.event.issue.number }} 
-#           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-
 name: Auto_Coder
 on:
   issues:    
