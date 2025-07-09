@@ -13,7 +13,7 @@ jobs:
         
       - name: Interact with ChatGPT
         id: generated_code
-        uses: "tolem/Autocoder@v0.1.0 "
+        uses: "tolem/Autocoder@v0.1.0"
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
           REPOSITORY: ${{ github.repository }} 
